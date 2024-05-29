@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  #loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 999; /* Ensure this is below the loading element */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #loading img {
+    max-width: 100px; /* adjust this value according to your image size */
+    max-height: 100px; /* adjust this value according to your image size */
+  }
+  
+  #loading p {
+    text-align: center;
+  }
+  
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, rgb(0,0,0), rgb(55,44,28), rgb(164, 130, 85));
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .search-container input {
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-container button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .buttom{
+    width: 20px;
+    height: 20px;
+  }
+  
+  .search-preview {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .search-preview div {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .search-preview div:hover {
+    background: #f1f1f1;
+  }
+  
+  .table-container {
+    margin: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  th img {
+    vertical-align: middle;
+    margin-right: 5px;
+    height: 30px;
+    width: 30px;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, rgb(0,0,0), rgb(55,44,28), rgb(164, 130, 85));
+    border-top: 1px solid #ddd;
+    color:  white;
+    font-weight: bold;
+  }
+  
+  .footer-logo {
+    height: 30px;
+  }
+  
+  .footer-logo {
+    height: 30px;
+  }
+
+
+  /* Media Queries for Responsive Design */
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    height: 40px; /* Adjust as needed */
+  }
+
+  header {
+    padding: 10px; /* Adjust as needed */
+  }
+
+  .search-container input {
+    width: 70%; /* Adjust as needed */
+  }
+
+  .table-container {
+    margin: 10px; /* Adjust as needed */
+  } 
+}
+  

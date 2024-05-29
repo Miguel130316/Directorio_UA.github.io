@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directorio de Titulares de las Unidades Administrativas de la Secretaría de la Función Pública</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div id="loading">
+  <img src="img/sfplogin.png" alt="Logo">
+  <p>Espere un momento por favor... Cargando</p>
+</div>
+<header>
+  <img src="img/SFP.png" alt="Logo" class="logo">
+  <div class="search-container">
+    <input type="text" id="search" placeholder="Buscar por Nombre o Unidad Administrativa">
+    <button><img src="img/buscar.png" alt="Search"></button>
+    <div id="search-preview" class="search-preview"></div>
+  </div>
+</header>
+<div class="table-container">
+  <table id="directory">
+    <thead>
+      <tr>
+        <th> ID <img src="img/id.png" alt="ID Icon"></th>
+        <th> Nombre del Titular <img src="img/titular.png" alt="Owner Icon"></th>
+        <th> Unidad Administrativa <img src="img/area.png" alt="Unit Icon"></th>
+        <th> Correo electrónico  <img src="img/correo.png" alt="Email Icon"></th>
+        <th> Extensión <img src="img/telefono.png" alt="Phone Icon"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Rows will be populated by JavaScript -->
+    </tbody>
+  </table>
+  <div class="pagination">
+    <span id="results-count"></span>
+    <button id="prev">Anterior</button>
+    <button id="next">Siguiente</button>
+  </div>
+</div>
+<footer>
+  <img src="img/SFP.png" alt="Logo" class="footer-logo">
+  <p>All rights reserved || Ing.Miguel Angel Villegas Arellanos - 2024</p>
+  
+</footer>
+
+
+  
+      <script src="js/script.js"></script>
+      <script src="js/loading.js"></script>
+</body>
+</html>
